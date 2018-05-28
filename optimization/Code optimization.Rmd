@@ -1,0 +1,30 @@
+---
+title: "Code optimization"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+As presented by (S. Railsback et al. 2017), code in NetLogo language can be significantly improved in terms of efficiency if bottlenecks are identified and code is optimized. Since INSTAR's ultimate purpose is to aid environmental decision making in pine plantations, it is of high importance that executions can be run in acceptable short times for large areas and long time periods. Therefore, execution times and submodels have been monitored, time-consuming submodels have been identified and improvements have been implemented until running times have become acceptable for our purposes (see table below).
+
+| Name  |  Calls |  Inclusive Time (ms) initial | Inclusive Time (ms) optimized | Difference (%) | Exclusive Time (ms) initial | Exclusive Time (ms) optimized | Difference (%) | Exclusive Time/calls initial | Exclusive Time/calls optimized | Difference (%) |
+| :--------------------: |:---------------:|:----------------:| :------:|:------:|   
+| SETUP | 1 | 182.288 | 178.998 | -2 | 5.520 | 22.132 | 301 | 5.520 | 22.132 | 301 |
+| READ_PARAMETERS   | 1 | 11.959 | 6.910 | -42 | 11.959 | 6.910 | -42 | 11.959 | 6.910 | -42 |
+| INITIALIZE_LANDSCAPE| 1 | 2.669 | 1.524 | -43 | 2.669 | 1.524 | -43 | 2.669 | 1.524 | -43 |
+| INITIALIZE_PINES | 1 | 153.876 | 140.405 | -9 | 61.417 | 50.110 | -18 | 61.417 | 50.110 | -18 |
+| MY_NEIGHBOURS  | 9024 | 70.048 | 72.278 | 3 | 70.048 | 72.278 | 3 | 0.008 | 0.008 | 0 |
+| TRUNCATED_MEAN | 1274 | 2.773 | 2.908 | 5 | 2.773 | 2.908 | 5 | 0.002 | 0.002 | 0 |
+| INITIALIZE_EGGS  | 1  | 8.264 | 8.028 | -3 | 1.491 | 1.327 | -11 | 1.491 | 1.327 | -11 |
+| LAY_EGGS_ON_HOST | 435 | 13.984 | 13.676 | -2 | 13.984 | 13.676 | -2 | 0.032 | 0.031 | -3 |
+| READ_LANDSCAPE  | 1000 | 651.350 | 636.985 | -2 | 651.350 | 636.985 | -2 | 0.651 | 0.637 | -2 |
+| GO | 1000 | 5778.980 | 4952.199 | -14 | 219.280 | 259.343 | 18 | 0.219 | 0.259 | 18 |
+| UPDATE_COLONIES | 1000 | 81.814 | 68.133 | -17 | 225.658 | 194.054 | -14 | 0.226 | 0.194 | -14 |
+| UPDATE_NYMPHS | 1000 | 0.430 | 0.415 | -3 | 52.623 | 54.303 | 3 | 0.053 | 0.054 | 2 |
+| UPDATE_MOTHS | 1000 | 6.945 | 7.242 | 4 | 159.432 | 169.098 | 6 | 0.159 | 0.169 | 6 |
+| UPDATE_HOSTS | 1000 | 2945.008 | 2036.041 | -31 | 2945.008 | 2036.041 | -31 | 2.945 | 2.036 | -31 |
+| SAVE_MONTHLY_LANDSCAPE | 1000   | 1517.182 | 1594.018 | 5 | 1517.182 | 1594.018 | 5 | 1.517 | 1.594 | 5 |
+| WRITE_REPORT | 1 | 1.345 | 1.409 | 5 | 1.345 | 1.409 | 5 | 1.345 | 1.409 | 5 |
+| WRITE_RESULTS | 1 | 14.059 | 10.172 | -28 | 14.059 | 10.172 | -28 | 14.059 | 10.172 | -28 |

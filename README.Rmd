@@ -1,0 +1,9 @@
+# INSTAR
+
+An Agent-Based Model aiming to aid environmental decision making in pine plantations affected by Thaumetopoea pityocampa forest pest.
+
+Find model code as well as experiments codes under "scripts" folder. 
+
+Input files and parameter values are contained in "inputs" folder. Temperature maps can be accessed through the URL (...) and should be placed under "inputs/wimmed/" folder. 
+
+Code optimization has been performed and "optimization" folder contains pre- and post-execution times per function.
