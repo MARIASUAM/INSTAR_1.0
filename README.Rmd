@@ -2,7 +2,7 @@
 
 An Agent-Based Model aiming to aid environmental decision making in pine plantations affected by Thaumetopoea pityocampa forest pest.
 
-Find model code as well as experiments codes under "scripts" folder. 
+Find model code as well as experiments codes under "scripts" folder. This folder also contains the extensions "rnd" and "time". In order to run INSTAR code, place the extensions together with the code (as they are now) or install them in your NetLogo folder.
 
 Input files and parameter values are contained in "inputs" folder. Temperature maps can be accessed through the URL indicated below and should be unzipped and placed under "inputs/wimmed/" folder. 
 
