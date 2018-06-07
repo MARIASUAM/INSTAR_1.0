@@ -16,6 +16,11 @@
       "pathType": "FILE"
     },
     {
+      "repoPath": "scripts/time/joda-time-2.2.jar",
+      "targetPath": "instar/time/joda-time-2.2.jar",
+      "pathType": "FILE"
+    },
+    {
       "repoPath": "inputs/parameters.txt",
       "targetPath": "instar/inputs/parameters.txt",
       "pathType": "FILE"
