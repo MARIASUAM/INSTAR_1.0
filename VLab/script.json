@@ -2,22 +2,22 @@
   "scripts": [
     {
       "repoPath": "scripts/INSTAR_1.0.nlogo",
-      "targetPath": "instar/",
+      "targetPath": "instar/INSTAR_1.0.nlogo",
       "pathType": "FILE"
     },
     {
       "repoPath": "scripts/rnd/rnd.jar",
-      "targetPath": "instar/rnd/",
+      "targetPath": "instar/rnd/rnd.jar",
       "pathType": "FILE"
     },
     {
       "repoPath": "scripts/time/time.jar",
-      "targetPath": "instar/time/",
+      "targetPath": "instar/time/time.jar",
       "pathType": "FILE"
     },
     {
       "repoPath": "inputs/parameters.txt",
-      "targetPath": "instar/inputs/",
+      "targetPath": "instar/inputs/parameters.txt",
       "pathType": "FILE"
     }
   ]
