@@ -1,0 +1,60 @@
+{
+  "inputs": [
+    {
+      "id": "Instarinput_01",
+      "inputType": "individual",
+      "valueType": "value",
+      "description": "Land Cover",
+      "name": "Land Cover",
+      "obligation": true,
+      "hasDefault": false,
+      "valueSchema": "url",
+      "target": "instar/inputs/cover/land_cover_medium_23030.asc"
+    },
+    {
+      "id": "Instarinput_02",
+      "inputType": "individual",
+      "valueType": "value",
+      "description": "Elevation",
+      "name": "Elevation",
+      "obligation": true,
+      "hasDefault": false,
+      "valueSchema": "url",
+      "target": "instar/inputs/elevation/elev_medium_23030.asc"
+    },
+    {
+      "id": "Instarinput_03",
+      "inputType": "individual",
+      "valueType": "value",
+      "description": "Pines shape files in zip format",
+      "name": "Pines",
+      "obligation": true,
+      "hasDefault": false,
+      "valueSchema": "url",
+      "target": "instar/inputs/pines/pinos_medium_23030.zip"
+    },
+    {
+      "id": "Instarinput_04",
+      "inputType": "individual",
+      "valueType": "value",
+      "description": "Wimmed",
+      "name": "Wimmed",
+      "obligation": true,
+      "hasDefault": false,
+      "valueSchema": "url",
+      "target": "instar/inputs/wimmed_INSTAR_1.0.rar"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "Instaroutput_01",
+      "outputType": "array",
+      "valueType": "value",
+      "description": "",
+      "name": "Output",
+      "valueSchema": "url",
+      "target": "instar/outputs/",
+      "createFolder": true
+    }
+  ]
+}

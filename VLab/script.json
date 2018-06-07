@@ -1,0 +1,24 @@
+{
+  "scripts": [
+    {
+      "repoPath": "scripts/INSTAR_1.0.nlogo",
+      "targetPath": "instar/",
+      "pathType": "FILE"
+    },
+    {
+      "repoPath": "scripts/rnd/rnd.jar",
+      "targetPath": "instar/rnd/",
+      "pathType": "FILE"
+    },
+    {
+      "repoPath": "scripts/time/time.jar",
+      "targetPath": "instar/time/",
+      "pathType": "FILE"
+    },
+    {
+      "repoPath": "inputs/parameters.txt",
+      "targetPath": "instar/inputs/",
+      "pathType": "FILE"
+    }
+  ]
+}
