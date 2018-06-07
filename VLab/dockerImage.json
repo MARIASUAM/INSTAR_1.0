@@ -10,7 +10,7 @@
       "-c"
     ],
     "command": [
-      "CURDIR=\"$(pwd)\" && mkdir /usr/share/netlogo/models/instar && mkdir /usr/share/netlogo/models/inputs && mkdir /usr/share/netlogo/models/outputs && cp instar/INSTAR_1.0.nlogo /usr/share/netlogo/models/instar/ && mkdir /usr/share/netlogo/models/instar/time/ && mkdir /usr/share/netlogo/models/instar/rnd/ && cp instar/rnd/rnd.jar /usr/share/netlogo/models/instar/rnd/ && cp instar/time/time.jar /usr/share/netlogo/models/instar/time/ && cp -r instar/inputs/* /usr/share/netlogo/models/instar/inputs/ && cd /usr/share/netlogo/models/instar/inputs/ && unrar x wimmed_INSTAR_1.0.rar && cd pines && unzip -xvf pinos_medium_23030.zip && cd /usr/share/netlogo/ && /bin/bash /usr/share/netlogo/netlogo-headless.sh --model models/instar/INSTAR_1.0.nlogo --experiment StressTest-prueba1 && cp /usr/share/netlogo/models/outputs/* $CURDIR/instar/outputs/"
+      "CURDIR=$(pwd) && mkdir /usr/share/netlogo/models/instar && mkdir /usr/share/netlogo/models/inputs && mkdir /usr/share/netlogo/models/outputs && cp instar/INSTAR_1.0.nlogo /usr/share/netlogo/models/instar/ && mkdir /usr/share/netlogo/models/instar/time/ && mkdir /usr/share/netlogo/models/instar/rnd/ && cp instar/rnd/rnd.jar /usr/share/netlogo/models/instar/rnd/ && cp instar/time/time.jar /usr/share/netlogo/models/instar/time/ && cp -r instar/inputs/* /usr/share/netlogo/models/instar/inputs/ && cd /usr/share/netlogo/models/instar/inputs/ && unrar x wimmed_INSTAR_1.0.rar && cd pines && unzip -xvf pinos_medium_23030.zip && cd /usr/share/netlogo/ && /bin/bash /usr/share/netlogo/netlogo-headless.sh --model models/instar/INSTAR_1.0.nlogo --experiment StressTest-prueba1 && cp /usr/share/netlogo/models/outputs/* $CURDIR/instar/outputs/"
     ]
   }
 }
