@@ -1482,7 +1482,7 @@ low_thr_t_larvae
 low_thr_t_larvae
 -15
 -5
--12
+-10
 1
 1
 NIL
