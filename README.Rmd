@@ -1,13 +1,11 @@
 # INSTAR
 
-An Agent-Based Model aiming to aid environmental decision making in pine plantations affected by Thaumetopoea pityocampa forest pest.
+An Agent-Based Model aiming to aid environmental decision making in pine plantations affected by *Thaumetopoea pityocampa* forest pest.
 
-Find model code as well as experiments codes under "scripts" folder. This folder also contains the extensions "rnd" and "time". In order to run INSTAR code, place the extensions together with the code (as they are now) or install them in your NetLogo folder.
+Find model code as well as experiments codes under "scripts" folder. This folder also contains the extensions "rnd" and "time". In order to run INSTAR code, place the extensions together with the code or install them in your NetLogo installation directory.
 
-Input files and parameter values are contained in "inputs" folder. Temperature maps can be accessed through the URL indicated below and should be unzipped and placed under "inputs/wimmed/" folder. 
+Input files and parameter values are contained in "inputs" folder. Inputs files within "pines" and "wimmed" folders should be unzipped. 
 
 Code optimization has been performed and "optimization" folder contains pre- and post-execution times per function.
 
-
-
-Temperature maps accesible at: https://drive.google.com/file/d/1HORV8MR-DzrbJKoGpGc3cgMIUkH-4rx5/view?usp=sharing
+INSTAR can be also executed through a virtual laboratory developed by ECOPOTENTIAL project (http://ecopotential-project.eu/). Files under "VLAB" folder enable this functionality. The virtual laboratory can be accessed at: https://vlab.geodab.eu/

@@ -1,4 +1,4 @@
-"2002-07-29" ;; end_date
+"2006-01-01" ;; end_date
 "../inputs/elevation/elev_medium_23030.asc" ;; elevation_path
 "../inputs/pines/pinos_medium_23030.shp" ;; pines_path
 "../inputs/cover/land_cover_medium_23030.asc" ;; cover_path

@@ -1974,6 +1974,38 @@ NetLogo 5.2.1
       <value value="2001"/>
     </enumeratedValueSet>
   </experiment>
+  <experiment name="Normal_execution" repetitions="5" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <metric>execution_name</metric>
+    <enumeratedValueSet variable="lethal_tmin_testing">
+      <value value="-12"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="calibration_year">
+      <value value="2001"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="sd_quantity">
+      <value value="20"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="mean_quantity">
+      <value value="25"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="dev_t_eggs">
+      <value value="20"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="lethal_tmax_testing">
+      <value value="32"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="dev_ti_larvae">
+      <value value="20"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="high_thr_t_larvae">
+      <value value="22"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="low_thr_t_larvae">
+      <value value="-10"/>
+    </enumeratedValueSet>
+  </experiment>
 </experiments>
 @#$#@#$#@
 @#$#@#$#@
